@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Articulo buscado es: {{query}}
+    <p>Articulos encontrados: {{articulos|length}} articulos</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>modelo</th>
+                <th>velocidad</th>
+                <th>cambio</th>
+                <th>precio</th>
+            </tr>
+        </thead>
+    <tbody>
+        {% if articulos %}
+        {% for arti in articulos %}
+        <tr>
+            <td>{{ arti.nombre }}</td>
+            <td>{{ arti.modelo }}</td>
+            <td>{{ arti.velocidad }}</td>
+            <td>{{ arti.cambio }}</td>
+            <td>{{ arti.precio }}</td>
+        </tr>
+            {% endfor %}
+            {% else %}
+        <h2>No existen registro de articulo</h2>
+            {% endif %}
+        </tbody>
+    </table>
+    <br>
+    <a href="./index.html">Volver</a>
+</body>
+</html>

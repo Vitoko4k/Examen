@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar</title>
+</head>
+<body bgcolor="#FFFAC9">
+    <center>
+        <h1>COTIZAR</h1>
+    </center>
+    <center>
+        <h2>Ejemplo de Formulario</h2>
+        <form action="#" method="GET">
+            <fieldset>
+                <legend> Datos de Cliente </legend>
+            <table border="0">
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" size=20 maxlength="15"  placeholder="Ingrese solo su nombre" name="txt_nombre" id="txt_nombre" required></td>
+            </tr>
+            <tr>
+                <td>Apellido Paterno</td>
+                <td><input type="text" size=20 maxlength="15"  placeholder="Ingrese solo su Apellido Paterno" name="txt_apellidoP" id="txt_apellidoP" required></td>
+            </tr>
+            <tr>
+                <td>Apellido Materno</td>
+                <td><input type="text" size=20 maxlength="15"  placeholder="Ingrese solo su Apellido Materno" name="txt_apellidoM" id="txt_apellidoM" required></td>
+            </tr>
+            <tr>
+                <td>Telefono</td>
+                <td><input type="tel" placeholder="+(56)997110504" name="tel_numero" id="tel_numero" required></td>
+            </tr>
+            <tr>
+                <td>Correo</td>
+                <td><input type="email" name="txt_correo" style="text-transform:lowercase;" required></td>
+            </tr>
+            <tr>
+                <td>Moledo</td>
+                <td>
+                    <select name="opt_modelo" id="opt_modelo" required>
+                        <option value=""></option>
+                        <option value="Ful Racing"><Datag>Full Racing</Datag></option>
+                        <option value="Scoorter">Scooter</option>
+                        <option value="Enduro">Enduro</option>
+                        <option value="Hurbana">Hurbana</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Comentarios</td>
+                <td> <textarea name="txa_comentarios" id="txa_comentarios cols="30" rows="10" required></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar" name="btn_enviar"></td>
+                <td></td>
+            </tr>    
+        </table>
+    </fieldset>
+    </form>
+    </center>
+    <br>
+    <a href="./index.html">Volver</a>
+</body>
+</html>
